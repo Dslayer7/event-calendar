@@ -26,80 +26,7 @@ body {
 	flex-wrap: wrap;
     width: 100%; /* Ensures the container takes up full width */
     max-width: 1200px; /* Adjusts for maximum width to prevent excessive stretching */
-    margin: 100; /* Centers the main content within its parent */
-}
-
-
-.events-container {
-    flex: 1;
-    margin-right: 20px; /* Adjust spacing between events list and calendar */
-    background: #f9f9f9; /* Light background for the container */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Enable scrolling if the list is long */
-  }
-
-
-
-.event-item {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-in-out; /* Adjust for smooth expansion */
-    cursor: pointer;
-    overflow: hidden; /* Ensures the border-radius is applied to child elements */
-}
-
-.event-summary {
-    margin-bottom: 0px; /* Separates summary from details */
-    display: flex;
-	flex-direction: row;
-    justify-content: space-between;
-}
-
-.event-title {
-    display: flex;
-    align-items: center;
-}
-
-.event-item h4 {
-    margin: 0.5rem;
-    font-size: 1.3rem;
-    color: #2b2b2b; /* Match the calendar highlight color */
-}
-
-.event-info {
-    margin-right: 0.5rem;
-    display: flex;
-	flex-direction: column;   
-    align-items: end;
-    font-weight: 600;
-}
-
-.event-item p {
-    margin: 5px 0;
-    font-size: 1.0rem;
-    color: #333;
-    font-weight: 600;
-}
-
-.event-details {
-    padding-top: 10px;
-    display: none; /* Hidden by default */
-    border-top: 1px solid #eee; /* Visually separates details from the summary */
-}
-.event-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.event-image {
-    max-width: 100%; /* Ensures the image is not wider than the event block */
-    height: auto; /* Maintains the aspect ratio of the image */
-    margin-top: 10px; /* Adds some space above the image */
-    border-radius: 5px; /* Optional: rounds the corners of the image */
+    
 }
 
 .calendar-container {
@@ -108,7 +35,7 @@ body {
     height: 605px; /* Fixed height, adjust as needed */
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    
 }
 
 .calendar-container header {
@@ -196,8 +123,6 @@ header .calendar-current-date {
     cursor: pointer; /* Optional, if you want a pointer cursor on hover */
 }
 
-
-
 .calendar-dates li.inactive {
 	color: #aaa;
 }
@@ -226,6 +151,77 @@ header .calendar-current-date {
 	background: #e4e1e1;
 }
 
+.events-container {
+    flex: 1;
+    margin-left: 20px; /* Adjust spacing between events list and calendar */
+    background: #f9f9f9; /* Light background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable scrolling if the list is long */
+  }
+
+.event-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out; /* Adjust for smooth expansion */
+    cursor: pointer;
+    overflow: hidden; /* Ensures the border-radius is applied to child elements */
+}
+
+.event-summary {
+    margin-bottom: 0px; /* Separates summary from details */
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+.event-title {
+    display: flex;
+    align-items: center;
+}
+
+.event-item h4 {
+    margin: 0.5rem;
+    font-size: 1.3rem;
+    color: #2b2b2b; /* Match the calendar highlight color */
+}
+
+.event-info {
+    margin-right: 0.5rem;
+    display: flex;
+	flex-direction: column;   
+    align-items: end;
+    font-weight: 600;
+}
+
+.event-item p {
+    margin: 5px 0;
+    font-size: 1.0rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.event-details {
+    padding-top: 10px;
+    display: none; /* Hidden by default */
+    border-top: 1px solid #eee; /* Visually separates details from the summary */
+}
+.event-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.event-image {
+    max-width: 100%; /* Ensures the image is not wider than the event block */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-top: 10px; /* Adds some space above the image */
+    border-radius: 5px; /* Optional: rounds the corners of the image */
+}
+
+
 .image-container {
     text-align: center; /* Center the image horizontally */
     margin-top: 20px; /* Space from the content above */
@@ -234,4 +230,45 @@ header .calendar-current-date {
 .image-container img {
     max-width: 10%; /* Ensures the image is responsive */
     height: auto; /* Maintain aspect ratio */
+    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .calendar-container {
+        width: 100%;
+        height: auto; /* Fixed height, adjust as needed */
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        
+    }
+
+    .calendar-body .calendar-dates li {
+        margin-top: 15px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .events-container, .calendar-container {
+        
+        margin-left: 0;
+        margin-bottom: 20px; /* Add some space between the calendar and the event list on mobile */
+    }
+
+    .event-item h4 {
+        margin: 0.5rem;
+        margin-left: 0rem;
+        font-size: 1.1rem;
+    }
+
+    .event-item p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+    .image-container img {
+        max-width: 50%; /* Adjust the logo size on smaller screens */
+    }
 }

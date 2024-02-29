@@ -157,3 +157,40 @@ prevNextIcons.forEach(icon => {
         navigateMonth(increment);
     });
 });
+
+// Variables to store touch start and end positions
+let touchStartX = 0;
+let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
+
+function checkSwipeDirection() {
+    // Calculate the differences between start and end positions
+    const diffX = touchEndX - touchStartX;
+    const diffY = touchEndY - touchStartY;
+
+    // Check if the swipe is more horizontal than vertical
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+            // Swiped left, show next month
+            navigateMonth(1);
+        } else {
+            // Swiped right, show previous month
+            navigateMonth(-1);
+        }
+    }
+    // If the swipe is more vertical than horizontal, do nothing (allow scrolling)
+}
+
+// Add event listeners for touch start and end
+const calendar = document.querySelector('.calendar-container');
+calendar.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+}, false);
+
+calendar.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].clientX;
+    touchEndY = e.changedTouches[0].clientY;
+    checkSwipeDirection();
+}, false);
