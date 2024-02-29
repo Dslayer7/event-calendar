@@ -87,10 +87,6 @@ header .calendar-current-date {
     padding: 0;
 }
 
-.calendar-body .calendar-dates {
-	margin-bottom: 20px;
-}
-
 .calendar-body li {
 	width: calc(100% / 7);
 	font-size: 1.2rem;
@@ -111,7 +107,7 @@ header .calendar-current-date {
 }
 
 .calendar-dates li {
-    width: 40px; /* Set a fixed width */
+    width: 36px; /* Set a fixed width */
     height: 40px; /* Set a fixed height to match the width for a circle */
     line-height: 40px; /* Adjust if using flexbox instead */
     display: flex;
