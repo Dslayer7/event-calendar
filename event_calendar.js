@@ -17,11 +17,9 @@ const months = [
 const eventsData = {
     "2024": { // Assuming the year 2024 for demonstration; you might want to make this dynamic
         "January": [
-            { date: "2024-02-08", title: "Gin Dinner", place: "Table36", description: "Description of Event A", imageUrl: "path/to/imageA.jpg", color: "#DAAAAF" },
-            { date: "2024-02-16", title: "Violin Dinner at the Chapel", place: "Table36", description: "Description of Event B", imageUrl: "path/to/imageA.jpg", color: "#CEDAAA" },
-            { date: "2024-02-21", title: "Zouk & Kizomba Night", place: "Table36", description: "Description of Event C", imageUrl: "path/to/imageA.jpg", color: "#CCFFCC" },
-            { date: "2024-02-22", title: "Drag Queen Show Vol.1", place: "Table36", description: "Description of Event D", imageUrl: "path/to/imageA.jpg", color: "#CCFFCC" },
-            { date: "2024-02-28", title: "Salsa Night", place: "Table36", description: "Description of Event E", imageUrl: "path/to/imageA.jpg", color: "#D18ED0" }
+                       
+            { date: "2024-01-24", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event March2024.jpg", color: "#a3bfd8" },
+            { date: "2024-03-15", title: "SUNTORY Wine Dinner", place: "Shun", description: "18:30 - 21:00 | JPY25,000", imageUrl: "Suntory Wine Dinner v1.jpg", color: "#a3d8c9" },
         ],
         "February": [
             { date: "2024-02-08", title: "Gin Dinner", place: "Table36", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Gin Dinner FEB.jpg", color: "#a3d8c9" },
@@ -33,14 +31,14 @@ const eventsData = {
         "March": [
             { date: "2024-03-01", title: "Hawaiian Night", place: "Table36", description: "20:00 - 22:30 | Nathan Kanae Exclusive Ukelele Performance", imageUrl: "Hawaiian Night.jpg", color: "#a3d8c9" },
             { date: "2024-03-15", title: "SUNTORY Whisky Dinner", place: "Minami", description: "18:30 - 21:00 | JPY25,000", imageUrl: "Whisky Dinner V1.jpg", color: "#a3b2d8" },
-            { date: "2024-03-13", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_March.jpg", color: "#d8a3a3" },
-            { date: "2024-03-18", title: "Kiwi Aussie Mixer", place: "Nambar10", description: "19:00 - 21:00 | Free Flow Food & Drinks | JPY5,000", imageUrl: "Cat no flyer.jpg", color: "#b8d8a3" },
+            { date: "2024-03-20", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_March.jpg", color: "#d8a3a3" },
             { date: "2024-03-23", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Drag Queen Party vol2.jpg", color: "#d8a3d1" },
             { date: "2024-03-27", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event March2024.jpg", color: "#a3bfd8" },
             { date: "2024-03-27", title: "Dinner Dance", place: "Table36", description: "20:45 - 23:00 | The Brown Eyed Katz Band Exclusive Performance", imageUrl: "Cat coming soon 2.jpg", color: "#d8c4a3" }
         ],
         "April": [
-            { date: "2024-04-05", title: "Spring Pink Bubbles", place: "SHUN", description: "18:30 - 21:00 | JPY22,000", imageUrl: "Cat coming soon 2.jpg", color: "#a3b2d8" },
+            { date: "2024-04-12", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Cat coming soon 2.jpg", color: "#a3b2d8" },
+            { date: "2024-04-13", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Cat coming soon 2.jpg", color: "#a3b2d8" },
             { date: "2024-04-17", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_April.jpg", color: "#d8a3a3" },
             { date: "2024-04-01", title: "Match Making Party", place: "Nambar10", description: "TBD| ", imageUrl: "Cat coming soon 2.jpg", color: "#b8d8a3" },
             { date: "2024-04-01", title: "Drag Queen Show", place: "Nambar10", description: "TBD| 20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Cat coming soon 2.jpg", color: "#d8a3d1" },
@@ -51,13 +49,14 @@ const eventsData = {
 };
 
 
-// Function to generate events
 const generateEvents = (year, month) => {
     const monthName = months[month];
     const eventsForMonth = eventsData[year]?.[monthName] || [];
 
     const eventsHTML = eventsForMonth.map(event => {
-        return `<li class="event-item" style="background-color: ${event.color};">
+        // Use replace with a global regex for compatibility
+        const eventId = `event-${event.date.replace(/-/g, '_')}`; // Ensure this matches the format used in the calendar
+        return `<li id="${eventId}" class="event-item" style="background-color: ${event.color};">
                     <div class="event-summary">
                         <div class="event-title">
                             <h4>${event.title}</h4>
@@ -75,6 +74,7 @@ const generateEvents = (year, month) => {
     }).join('');
 
     eventListElement.innerHTML = eventsHTML;
+
 
     // Add click event listeners to toggle event details
     document.querySelectorAll('.event-item').forEach(item => {
@@ -103,31 +103,56 @@ const generateCalendar = (year, month) => {
 
     // Calculate and display the days from the previous month
     for (let i = 0; i < emptyCells; i++) {
-        // This will get the correct date for the days from the previous month
         let prevMonthDay = lastDateOfPreviousMonth - emptyCells + 1 + i;
         calendarHTML += `<li class="inactive" style="opacity: 0.5;">${prevMonthDay}</li>`;
     }
 
     // Fill in the days of the current month
     for (let i = 1; i <= lastDateOfMonth; i++) {
-        let isToday = i === today.getDate() && month === today.getMonth() && year === today.getFullYear();
-        let date = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
-        let eventForDay = Object.values(eventsData[year]?.[months[month]] || []).find(event => event.date === date);
+        let dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
+        let isToday = dateString === `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+        let eventForDay = eventsData[currentYear]?.[months[month]]?.find(event => event.date === dateString);
+        let eventId = eventForDay ? `event-${eventForDay.date.replaceAll('-', '_')}` : null;
+        let dayClass = isToday ? "active" : eventForDay ? "has-event" : "";
         let dayStyle = isToday ? `style="background-color: #FFD700; border-radius: 50%;"` : eventForDay ? `style="background-color: ${eventForDay.color}; border-radius: 50%;"` : "";
-
-        calendarHTML += `<li ${dayStyle}>${i}</li>`;
+        let dataEventId = eventForDay ? `data-event-id="event-${eventForDay.date.replaceAll('-', '_')}"` : "";
+        let dayHtml = eventId ? `<li class="${isToday ? 'active ' : ''}has-event" data-event-id="${eventId}">${i}</li>` : `<li class="${isToday ? 'active' : ''}">${i}</li>`;
+        
+        calendarHTML += `<li class="${dayClass}" ${dayStyle} ${dataEventId ? `data-event-id="${eventId}"` : ''}>${i}</li>`;
     }
 
     // Determine the number of days to append from the next month
-    let daysToAddForNextMonth = 6 - lastDayOfMonth; // Adjust this if your week starts on a different day
+    let daysToAddForNextMonth = 6 - lastDayOfMonth;
     for (let i = 1; i <= daysToAddForNextMonth; i++) {
-        calendarHTML += `<li class="inactive" style="opacity: 0.5;">${i}</li>`; // Low opacity for next month's days
+        calendarHTML += `<li class="inactive" style="opacity: 0.5;">${i}</li>`;
     }
 
     currentDateElement.innerText = `${months[month]} ${year}`;
     dayElement.innerHTML = calendarHTML;
-};
 
+    // Attach event listeners for days with events
+    // Attach event listeners for days with events
+document.querySelectorAll('.calendar-dates li.has-event').forEach(element => {
+    element.addEventListener('click', function() {
+        const eventId = this.getAttribute('data-event-id');
+        const eventElement = document.getElementById(eventId);
+        if (eventElement) {
+            // Scroll to the event element
+            eventElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            // Automatically open the event details
+            const eventDetails = eventElement.querySelector('.event-details');
+            if (eventDetails && eventDetails.style.display === 'none') {
+                eventDetails.style.display = 'block';
+            } else {
+                // If you want to toggle the details visibility on click, uncomment the next line
+                // eventDetails.style.display = 'none';
+            }
+        }
+    });
+});    
+  
+};
 
 
 // Function to navigate between months
