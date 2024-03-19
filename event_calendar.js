@@ -32,19 +32,24 @@ const eventsData = {
             { date: "2024-03-01", title: "Hawaiian Night", place: "Table36", description: "20:00 - 22:30 | Nathan Kanae Exclusive Ukelele Performance", imageUrl: "Hawaiian Night.jpg", color: "#a3d8c9" },
             { date: "2024-03-15", title: "SUNTORY Whisky Dinner", place: "Minami", description: "18:30 - 21:00 | JPY25,000", imageUrl: "Whisky Dinner V1.jpg", color: "#a3b2d8" },
             { date: "2024-03-20", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_March.jpg", color: "#d8a3a3" },
-            { date: "2024-03-23", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Drag Queen Party vol2.jpg", color: "#d8a3d1" },
+            { date: "2024-03-23", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Drag Queen Party March.jpg", color: "#d8a3d1" },
             { date: "2024-03-27", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event March2024.jpg", color: "#a3bfd8" },
             { date: "2024-03-27", title: "Dinner Dance", place: "Table36", description: "20:45 - 23:00 | The Brown Eyed Katz Band Exclusive Performance", imageUrl: "Cat coming soon 2.jpg", color: "#d8c4a3" }
         ],
         "April": [
-            { date: "2024-04-12", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Cat coming soon 2.jpg", color: "#a3b2d8" },
-            { date: "2024-04-13", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Cat coming soon 2.jpg", color: "#a3b2d8" },
+            { date: "2024-04-12", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Errazuris Wine Dinner.jpg", color: "#a3b2d8" },
+            { date: "2024-04-13", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Errazuris Wine Dinner.jpg", color: "#a3b2d8" },
             { date: "2024-04-17", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_April.jpg", color: "#d8a3a3" },
-            { date: "2024-04-01", title: "Match Making Party", place: "Nambar10", description: "TBD| ", imageUrl: "Cat coming soon 2.jpg", color: "#b8d8a3" },
-            { date: "2024-04-01", title: "Drag Queen Show", place: "Nambar10", description: "TBD| 20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Cat coming soon 2.jpg", color: "#d8a3d1" },
+            { date: "2024-04-01", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Cat coming soon 2.jpg", color: "#d8a3d1" },
             { date: "2024-04-26", title: "Violin Dinner at the Chapel", place: "Chapel Jour", description: "18:30 - 22:00 | JPY22,000", imageUrl: "Cat coming soon 2.jpg", color: "#d5d8a3" },
             { date: "2024-04-27", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event April2024.jpg", color: "#a3bfd8" }
-        ]
+        ],
+        "May": [
+            { date: "2024-05-22", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_April.jpg", color: "#d8a3a3" },
+            { date: "2024-05-29", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event April2024.jpg", color: "#a3bfd8" },
+            { date: "2024-05-01", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry| 20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Cat coming soon 2.jpg", color: "#d8a3d1" },
+            { date: "2024-05-01", title: "Match Making Party", place: "Nambar10", description: "TBD| ", imageUrl: "Cat coming soon 2.jpg", color: "#b8d8a3" }
+        ]        
     }
 };
 
