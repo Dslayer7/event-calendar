@@ -201,10 +201,20 @@ header .calendar-current-date {
 }
 
 .event-details {
+    transition: max-height 0.5s ease, padding 0.5s ease;
     padding-top: 10px;
     display: none; /* Hidden by default */
+    overflow: hidden;
     border-top: 1px solid #eee; /* Visually separates details from the summary */
+    max-height: 0;
 }
+
+.event-details.open {
+    display: block;
+    padding-top: 10px; /* Restore padding when open */
+    max-height: 500px; /* Maximum height when expanded - adjust as needed */
+}
+
 .event-item:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);

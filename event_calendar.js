@@ -1,84 +1,108 @@
 let currentDate = new Date();
 let currentYear = currentDate.getFullYear();
 let currentMonth = currentDate.getMonth();
+let eventsDataGlobal = null; // Global variable to store event data
 
 const dayElement = document.querySelector(".calendar-dates");
 const currentDateElement = document.querySelector(".calendar-current-date");
 const prevNextIcons = document.querySelectorAll(".calendar-navigation span");
 const eventListElement = document.querySelector(".event-list"); // Replace with the actual selector for your events container
 
-// Array of month names
-const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
-
-// Events data structure
-const eventsData = {
-    "2024": { // Assuming the year 2024 for demonstration; you might want to make this dynamic
-        "January": [
-                       
-            { date: "2024-01-24", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event March2024.jpg", color: "#a3bfd8" },
-            { date: "2024-03-15", title: "SUNTORY Wine Dinner", place: "Shun", description: "18:30 - 21:00 | JPY25,000", imageUrl: "Suntory Wine Dinner v1.jpg", color: "#a3d8c9" },
-        ],
-        "February": [
-            { date: "2024-02-08", title: "Gin Dinner", place: "Table36", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Gin Dinner FEB.jpg", color: "#a3d8c9" },
-            { date: "2024-02-16", title: "Violin Dinner at the Chapel", place: "Chapel Jour", description: "18:30 - 22:00 | JPY22,000", imageUrl: "Violin Dinner - Valentin v1.jpg", color: "#d5d8a3" },
-            { date: "2024-02-21", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_March.jpg", color: "#d8a3a3" },
-            { date: "2024-02-22", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Drag Queen Party v1.jpg", color: "#d8a3d1" },
-            { date: "2024-02-28", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event March2024.jpg", color: "#a3bfd8" }
-        ],
-        "March": [
-            { date: "2024-03-01", title: "Hawaiian Night", place: "Table36", description: "20:00 - 22:30 | Nathan Kanae Exclusive Ukelele Performance", imageUrl: "Hawaiian Night.jpg", color: "#a3d8c9" },
-            { date: "2024-03-15", title: "SUNTORY Whisky Dinner", place: "Minami", description: "18:30 - 21:00 | JPY25,000", imageUrl: "Whisky Dinner V1.jpg", color: "#a3b2d8" },
-            { date: "2024-03-20", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_March.jpg", color: "#d8a3a3" },
-            { date: "2024-03-23", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Drag Queen Party March.jpg", color: "#d8a3d1" },
-            { date: "2024-03-27", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event March2024.jpg", color: "#a3bfd8" },
-            { date: "2024-03-27", title: "Dinner Dance", place: "Table36", description: "20:45 - 23:00 | The Brown Eyed Katz Band Exclusive Performance", imageUrl: "Cat coming soon 2.jpg", color: "#d8c4a3" }
-        ],
-        "April": [
-            { date: "2024-04-12", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Errazuris Wine Dinner.jpg", color: "#a3b2d8" },
-            { date: "2024-04-13", title: "Errazuriz Wine Dinner", place: "SHUN", description: "18:30 - 21:00 | JPY23,000", imageUrl: "Errazuris Wine Dinner.jpg", color: "#a3b2d8" },
-            { date: "2024-04-17", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_April.jpg", color: "#d8a3a3" },
-            { date: "2024-04-01", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Cat coming soon 2.jpg", color: "#d8a3d1" },
-            { date: "2024-04-26", title: "Violin Dinner at the Chapel", place: "Chapel Jour", description: "18:30 - 22:00 | JPY22,000", imageUrl: "Cat coming soon 2.jpg", color: "#d5d8a3" },
-            { date: "2024-04-27", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event April2024.jpg", color: "#a3bfd8" }
-        ],
-        "May": [
-            { date: "2024-05-22", title: "Zouk & Kizomba Night", place: "Nambar10", description: "19:00 - 23:00| 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Zouk_Kizomba_Flyer_April.jpg", color: "#d8a3a3" },
-            { date: "2024-05-29", title: "Salsa Night", place: "Table36", description: "TheLounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000", imageUrl: "Salsa Event April2024.jpg", color: "#a3bfd8" },
-            { date: "2024-05-01", title: "Drag Queen Show", place: "Nambar10", description: "20:00 - 23:00 | Drag Show & DJ Party | Free Entry| 20:00 - 23:00 | Drag Show & DJ Party | Free Entry", imageUrl: "Cat coming soon 2.jpg", color: "#d8a3d1" },
-            { date: "2024-05-01", title: "Match Making Party", place: "Nambar10", description: "TBD| ", imageUrl: "Cat coming soon 2.jpg", color: "#b8d8a3" }
-        ]        
+const langResources = {
+    en: {
+        months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        weekdays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        title: "Events and Promotions Calendar"
+        // Add other texts as needed
+    },
+    ja: {
+        months: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+        weekdays: ["日", "月", "火", "水", "木", "金", "土"],
+        title: "イベントとプロモーションのカレンダー"
+        // Add translations for other texts
     }
 };
 
+function applyLanguage(lang) {
+    const resources = langResources[lang] || langResources.en; // Fallback to English
+    document.querySelector('.title-container h1').innerText = resources.title;
+    document.querySelectorAll('.calendar-weekdays li').forEach((element, index) => {
+        element.innerText = resources.weekdays[index];
+    });
+    // Update other texts similarly
+}
 
-const generateEvents = (year, month) => {
-    const monthName = months[month];
-    const eventsForMonth = eventsData[year]?.[monthName] || [];
+async function loadEventsData() {
+    const response = await fetch('events.json');
+    const data = await response.json();
+    eventsDataGlobal = data; // Ensure this assignment occurs
+    console.log("Data loaded", eventsDataGlobal);
+    return data; // This return is optional since we're using a global variable
+}
+
+async function initializeCalendar() {
+    await loadEventsData(); // Ensure data is loaded before continuing
+    applyLanguage(getCurrentLang());
+    generateCalendar(currentYear, currentMonth);
+    generateEvents(currentYear, currentMonth);
+    setupNavigation();
+}
+
+
+function setupNavigation() {
+    console.log('Setting up navigation');
+    prevNextIcons.forEach(icon => {
+        let newIcon = icon.cloneNode(true); // Clone the node, removing event listeners
+        icon.parentNode.replaceChild(newIcon, icon); // Replace the old icon with the new one
+        
+        console.log(`Adding click listener to ${newIcon.id}`);
+        newIcon.addEventListener("click", () => {
+            console.log(`Clicked on ${newIcon.id}`);
+            const increment = newIcon.id === "calendar-prev" ? -1 : 1;
+            navigateMonth(increment); // Use global events data for navigation
+        });
+    });
+}
+
+
+function getCurrentLang() {
+    const lang = navigator.language.slice(0, 2);
+    console.log("Detected language:", lang); // Add this line
+    return lang === "ja" ? "ja" : "en";
+}
+
+
+
+function generateEvents(year, month) {
+    const monthKey = (month + 1).toString().padStart(2, '0');
+    const eventsForMonth = eventsDataGlobal[year]?.[monthKey] || [];
+
+    // Start by clearing any existing events to avoid duplicates
+    eventListElement.innerHTML = '';
 
     const eventsHTML = eventsForMonth.map(event => {
-        // Use replace with a global regex for compatibility
-        const eventId = `event-${event.date.replace(/-/g, '_')}`; // Ensure this matches the format used in the calendar
+        const eventId = `event-${event.date.replace(/-/g, '_')}`;
+        const lang = getCurrentLang();
         return `<li id="${eventId}" class="event-item" style="background-color: ${event.color};">
                     <div class="event-summary">
                         <div class="event-title">
-                            <h4>${event.title}</h4>
+                            <h4>${event.title[lang]}</h4>
                         </div>
                         <div class="event-info">
-                            <p>${event.place}</p>
+                            <p>${event.place[lang]}</p>
                             <p>${event.date}</p>
                         </div>
                     </div>
                     <div class="event-details" style="display: none;">
-                        <p>${event.description}</p>
-                        <img src="${event.imageUrl}" alt="${event.title}" class="event-image">
+                        <p>${event.description[lang]}</p>
+                        <img src="${event.imageUrl}" alt="${event.title[lang]}" class="event-image">
                     </div>
                 </li>`;
     }).join('');
 
+    console.log(eventsForMonth); // To see if events are being loaded correctly
     eventListElement.innerHTML = eventsHTML;
+
 
 
     // Add click event listeners to toggle event details
@@ -100,6 +124,10 @@ const generateCalendar = (year, month) => {
     let lastDateOfMonth = new Date(year, month + 1, 0).getDate();
     let lastDayOfMonth = new Date(year, month + 1, 0).getDay();
 
+    const lang = getCurrentLang(); // Get current language setting
+    const monthName = langResources[lang].months[month];
+    // Use eventsDataGlobal to get events for the specific month
+
     let calendarHTML = "";
     let today = new Date();
 
@@ -116,12 +144,15 @@ const generateCalendar = (year, month) => {
     for (let i = 1; i <= lastDateOfMonth; i++) {
         let dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
         let isToday = dateString === `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-        let eventForDay = eventsData[currentYear]?.[months[month]]?.find(event => event.date === dateString);
+        let eventForDay = eventsDataGlobal[year]?.[String(month + 1).padStart(2, '0')]?.find(event => event.date === dateString);
+
+        if(eventForDay) { // Debugging line to see if events match the condition
+            console.log(`Event found for day: ${i}`, eventForDay);
+        }
         let eventId = eventForDay ? `event-${eventForDay.date.replaceAll('-', '_')}` : null;
         let dayClass = isToday ? "active" : eventForDay ? "has-event" : "";
         let dayStyle = isToday ? `style="background-color: #FFD700; border-radius: 50%;"` : eventForDay ? `style="background-color: ${eventForDay.color}; border-radius: 50%;"` : "";
         let dataEventId = eventForDay ? `data-event-id="event-${eventForDay.date.replaceAll('-', '_')}"` : "";
-        let dayHtml = eventId ? `<li class="${isToday ? 'active ' : ''}has-event" data-event-id="${eventId}">${i}</li>` : `<li class="${isToday ? 'active' : ''}">${i}</li>`;
         
         calendarHTML += `<li class="${dayClass}" ${dayStyle} ${dataEventId ? `data-event-id="${eventId}"` : ''}>${i}</li>`;
     }
@@ -132,53 +163,92 @@ const generateCalendar = (year, month) => {
         calendarHTML += `<li class="inactive" style="opacity: 0.5;">${i}</li>`;
     }
 
-    currentDateElement.innerText = `${months[month]} ${year}`;
+    currentDateElement.innerText = `${monthName} ${year}`;
     dayElement.innerHTML = calendarHTML;
 
+    
     // Attach event listeners for days with events
-    // Attach event listeners for days with events
-document.querySelectorAll('.calendar-dates li.has-event').forEach(element => {
-    element.addEventListener('click', function() {
-        const eventId = this.getAttribute('data-event-id');
-        const eventElement = document.getElementById(eventId);
-        if (eventElement) {
-            // Scroll to the event element
-            eventElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    document.querySelectorAll('.calendar-dates li.has-event').forEach(element => {
+        // Inside your existing click event listener for calendar dates with events
+        element.addEventListener('click', function() {
+            const eventId = this.getAttribute('data-event-id');
+            const eventElement = document.getElementById(eventId);
+            if (eventElement) {
+                eventElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-            // Automatically open the event details
-            const eventDetails = eventElement.querySelector('.event-details');
-            if (eventDetails && eventDetails.style.display === 'none') {
-                eventDetails.style.display = 'block';
-            } else {
-                // If you want to toggle the details visibility on click, uncomment the next line
-                // eventDetails.style.display = 'none';
+                // Highlight the event detail section
+                const details = eventElement.querySelector('.event-details');
+                details.style.display = 'block'; // Ensure details are visible
+                details.style.transition = 'background-color 0.5s ease'; // Smooth transition for background color
+                details.style.backgroundColor = '#ffff99'; // Temporary highlight color
+
+                // Scroll to the event element smoothly
+                eventElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+
+                // Remove the highlight after a few seconds
+                setTimeout(() => {
+                    details.style.backgroundColor = ''; // Revert to original background color
+                }, 2000); // Adjust time as needed
             }
-        }
+        });
+
     });
-});    
-  
+
+    // Call this function after you've generated your calendar and events to ensure the listeners are added
+    addEventListenersToDays();
+    
 };
+
+// Function to add click event listeners to calendar days with events
+function addEventListenersToDays() {
+    document.querySelectorAll('.calendar-dates li.has-event').forEach(element => {
+        element.addEventListener('click', function() {
+            const eventId = this.getAttribute('data-event-id');
+            const eventElement = document.getElementById(eventId);
+
+            // Close all event details
+            document.querySelectorAll('.event-details').forEach(detail => {
+                detail.style.display = 'none'; // Close detail
+            });
+
+            // Open the clicked event's details if not already open
+            if (eventElement) {
+                const details = eventElement.querySelector('.event-details');
+                // Check if the clicked event's details are already open
+                if (details.style.display === 'none' || details.style.display === '') {
+                    details.style.display = 'block'; // Open the clicked event's details
+                    eventElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    details.style.display = 'none'; // Optionally close the clicked event's details if already open
+                }
+            }
+        });
+    });
+}
+
 
 
 // Function to navigate between months
+// Adjust navigateMonth to accept and pass along eventsData
 const navigateMonth = (increment) => {
+    console.log(`Before increment: Month = ${currentMonth}, Year = ${currentYear}, Increment = ${increment}`);
     currentMonth += increment;
-    
     if (currentMonth < 0) {
-        currentYear--;
-        currentMonth = 11;
+        currentYear --;
+        currentMonth = 11; // Adjust for wrap-around to December
     } else if (currentMonth > 11) {
-        currentYear++;
-        currentMonth = 0;
+        currentYear ++;
+        currentMonth = 0; // Adjust for wrap-around to January
     }
-
-    generateCalendar(currentYear, currentMonth);
+    console.log(`After increment: Month = ${currentMonth}, Year = ${currentYear}`);
+    generateCalendar(currentYear, currentMonth); // Regenerate calendar and events with current data
     generateEvents(currentYear, currentMonth);
 };
 
-// Initial call to populate calendar and events
-generateCalendar(currentYear, currentMonth);
-generateEvents(currentYear, currentMonth);
+
 
 // Event listeners for previous and next icons
 prevNextIcons.forEach(icon => {
@@ -224,3 +294,10 @@ calendar.addEventListener('touchend', e => {
     touchEndY = e.changedTouches[0].clientY;
     checkSwipeDirection();
 }, false);
+
+
+// At the very end of your script, after all function definitions
+document.addEventListener('DOMContentLoaded', () => {
+    initializeCalendar().catch(error => console.error("Failed to initialize the calendar:", error));
+});
+
