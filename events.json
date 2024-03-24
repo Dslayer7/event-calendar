@@ -138,7 +138,7 @@
         "color": "#a3bfd8"
       },
       {
-        "date": "2024-03-27",
+        "date": "2024-03-30",
         "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
         "place": { "en": "Table36", "ja": "テーブル36" },
         "description": {
@@ -204,7 +204,7 @@
         },
         "imageUrl": "posters/Salsa Event April2024.jpg",
         "color": "#a3bfd8"
-       }
+      }
     ],
     "05": [
         {

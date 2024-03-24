@@ -206,7 +206,6 @@ header .calendar-current-date {
     display: none; /* Hidden by default */
     overflow: hidden;
     border-top: 1px solid #eee; /* Visually separates details from the summary */
-    max-height: 0;
 }
 
 .event-details.open {
