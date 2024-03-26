@@ -96,9 +96,14 @@ function generateEvents(year, month) {
                     <div class="event-details" style="display: none;">
                         <p>${event.description[lang]}</p>
                         <img src="${event.imageUrl}" alt="${event.title[lang]}" class="event-image">
+                        <!-- FontAwesome download icon -->
+                        <a href="${event.imageUrl}" download title="Download Poster" class="download-icon">
+                            <i class="fas fa-download"></i>
+                        </a>
                     </div>
                 </li>`;
-    }).join('');
+    }).join('');    
+    
 
     console.log(eventsForMonth); // To see if events are being loaded correctly
     eventListElement.innerHTML = eventsHTML;
