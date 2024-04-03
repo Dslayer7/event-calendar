@@ -145,15 +145,37 @@
           "en": "20:45 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
           "ja": "20:45 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
         },
-        "imageUrl": "posters/Cat coming soon 2.jpg",
+        "imageUrl": "posters/dinner_dance_2403.jpg",
         "color": "#d8c4a3"
       }
     ],
     "04": [
       {
+        "date": "2024-04-06",
+        "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+        "place": { "en": "Table36", "ja": "テーブル36" },
+        "description": {
+          "en": "18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+          "ja": "18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+        },
+        "imageUrl": "posters/Dinner Dance.jpg",
+        "color": "#d8c4a3"
+      },
+      {
+        "date": "2024-04-06",
+        "title": { "en": "F1 Dance Party", "ja": "F1 ダンス パーティー" },
+        "place": { "en": "Nambar10", "ja": "ナンバー10" },
+        "description": {
+          "en": "20:00 - 23:00 | Formula 1 party with Red Bull | Free Entry",
+          "ja": "20:00 - 23:00 | レッドブルとのF1パーティー | 入場無料"
+        },
+        "imageUrl": "posters/F1 Red Bull.jpg",
+        "color": "#DB8E81"
+      },
+      {
         "date": "2024-04-12",
         "title": { "en": "Errazuriz Wine Dinner", "ja": "エラズリス ワインディナー" },
-        "place": { "en": "SHUN", "ja": "旬" },
+        "place": { "en": "SHUN", "ja": "シュン" },
         "description": {
           "en": "18:30 - 21:00 | JPY23,000",
           "ja": "18:30 - 21:00 | 23,000円"
@@ -164,7 +186,7 @@
       {
         "date": "2024-04-13",
         "title": { "en": "Errazuriz Wine Dinner", "ja": "エラズリス ワインディナー" },
-        "place": { "en": "SHUN", "ja": "旬" },
+        "place": { "en": "SHUN", "ja": "シュン" },
         "description": {
           "en": "18:30 - 21:00 | JPY23,000",
           "ja": "18:30 - 21:00 | 23,000円"
@@ -188,10 +210,10 @@
         "title": { "en": "Violin Dinner at the Chapel", "ja": "チャペルでのバイオリンディナー" },
         "place": { "en": "Chapel Jour", "ja": "チャペルジュール" },
         "description": {
-          "en": "18:30 - 22:00 | JPY22,000",
-          "ja": "18:30 - 22:00 | 22,000円"
+          "en": "18:30 - 22:00 | Live Violin and Piano Performance while enjoying a 5 course meal | JPY22,000",
+          "ja": "18:30 - 22:00 | 5 コース料理を楽しみながらヴァイオリンとピアノの生演奏を鑑賞 | 22,000円"
         },
-        "imageUrl": "posters/Cat coming soon 2.jpg",
+        "imageUrl": "posters/Violin Dinner v2.jpg",
         "color": "#d5d8a3"
       },
       {
