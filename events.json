@@ -185,6 +185,17 @@
       },
       {
         "date": "2024-04-13",
+        "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+        "place": { "en": "Table36", "ja": "テーブル36" },
+        "description": {
+          "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+          "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+        },
+        "imageUrl": "posters/Dinner_Dance_blue.jpg",
+        "color": "#d8c4a3"
+      },
+      {
+        "date": "2024-04-13",
         "title": { "en": "Errazuriz Wine Dinner", "ja": "エラズリス ワインディナー" },
         "place": { "en": "SHUN", "ja": "シュン" },
         "description": {
@@ -229,6 +240,17 @@
       }
     ],
     "05": [
+        {
+          "date": "2024-05-04",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
         {
           "date": "2024-05-22",
           "title": { "en": "Zouk & Kizomba Night", "ja": "ズーク＆キゾンバナイト" },
