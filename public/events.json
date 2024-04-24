@@ -253,35 +253,24 @@
         },
         {
           "date": "2024-05-22",
-          "title": { "en": "Zouk & Kizomba Night", "ja": "ズーク＆キゾンバナイト" },
-          "place": { "en": "Nambar10", "ja": "ナンバー10" },
-          "description": {
-            "en": "19:00 - 23:00 | 2 Drinks, Lesson and Party | JPY3,000",
-            "ja": "19:00 - 23:00 | ドリンク2杯、レッスンとパーティー込み | 3,000円"
-          },
-          "imageUrl": "posters/Zouk_Kizomba_Flyer_April.jpg",
-          "color": "#d8a3a3"
-        },
-        {
-          "date": "2024-05-29",
           "title": { "en": "Salsa Night", "ja": "サルサナイト" },
           "place": { "en": "Table36", "ja": "テーブル36" },
           "description": {
             "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
             "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
           },
-          "imageUrl": "posters/Salsa Event April2024.jpg",
+          "imageUrl": "posters/Salsa Event May22.jpg",
           "color": "#a3bfd8"
         },
         {
-          "date": "2024-05-01",
+          "date": "2024-05-25",
           "title": { "en": "Drag Queen Show", "ja": "ドラッグクイーンショー" },
           "place": { "en": "Nambar10", "ja": "ナンバー10" },
           "description": {
             "en": "20:00 - 23:00 | Drag Show & DJ Party | Free Entry",
             "ja": "20:00 - 23:00 | ドラッグショー＆DJパーティ | 無料入場"
           },
-          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "imageUrl": "posters/Drag Queen Party May v2.jpg",
           "color": "#d8a3d1"
         },
         {
@@ -294,6 +283,67 @@
           },
           "imageUrl": "posters/Cat coming soon 2.jpg",
           "color": "#b8d8a3"
+        }
+      ],
+      "06": [
+        {
+          "date": "2024-06-01",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-06-26",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event jun26.jpg",
+          "color": "#a3bfd8"
+        }
+      ],
+      "07": [
+        {
+          "date": "2024-07-06",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-07-24",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event jul24.jpg",
+          "color": "#a3bfd8"
+        }
+      ],
+      "08": [
+        {
+          "date": "2024-08-03",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
         }
       ]
     }
