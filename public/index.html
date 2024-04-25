@@ -54,10 +54,14 @@
 
 	<script src="sakura.js"></script>
 	<script>
-	document.addEventListener('DOMContentLoaded', function() {
-    	var sakura = new Sakura('body');
-    	sakura.start(); // Don't forget to call start() to initiate the effect
-	});
+		document.addEventListener('DOMContentLoaded', () => {
+			// Delay the start of the Sakura effect for 10 seconds (10000 milliseconds)
+			setTimeout(() => {
+				const sakura = new Sakura('body');
+				sakura.start();
+			}, 7000); // 10000 milliseconds = 10 seconds
+		});
 	</script>
+	
 </body>
 </html>

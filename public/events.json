@@ -221,8 +221,8 @@
         "title": { "en": "Violin Dinner at the Chapel", "ja": "チャペルでのバイオリンディナー" },
         "place": { "en": "Chapel Jour", "ja": "チャペルジュール" },
         "description": {
-          "en": "18:30 - 22:00 | Live Violin and Piano Performance while enjoying a 5 course meal | JPY22,000",
-          "ja": "18:30 - 22:00 | 5 コース料理を楽しみながらヴァイオリンとピアノの生演奏を鑑賞 | 22,000円"
+          "en": "18:30 - 22:00 | Live Violin and Piano Performance while enjoying a 5 course meal | JPY23,000",
+          "ja": "18:30 - 22:00 | 5 コース料理を楽しみながらヴァイオリンとピアノの生演奏を鑑賞 | 23,000円"
         },
         "imageUrl": "posters/Violin Dinner v2.jpg",
         "color": "#d5d8a3"
@@ -298,6 +298,17 @@
           "color": "#d8c4a3"
         },
         {
+          "date": "2024-06-15",
+          "title": { "en": "Beyonce Dance Party", "ja": "ビヨンセダンスパーティー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "TBD",
+            "ja": "未定"
+          },
+          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "color": "#a3d8b7"
+        },
+        {
           "date": "2024-06-26",
           "title": { "en": "Salsa Night", "ja": "サルサナイト" },
           "place": { "en": "Table36", "ja": "テーブル36" },
@@ -307,6 +318,39 @@
           },
           "imageUrl": "posters/Salsa Event jun26.jpg",
           "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-04-26",
+          "title": { "en": "Violin Dinner at the Chapel", "ja": "チャペルでのバイオリンディナー" },
+          "place": { "en": "Chapel Jour", "ja": "チャペルジュール" },
+          "description": {
+            "en": "18:30 - 22:00 | Live Violin and Piano Performance while enjoying a 5 course meal | JPY24,000",
+            "ja": "18:30 - 22:00 | 5 コース料理を楽しみながらヴァイオリンとピアノの生演奏を鑑賞 | 24,000円"
+          },
+          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "color": "#d5d8a3"
+        },
+        {
+          "date": "2024-06-29",
+          "title": { "en": "Drag Queen Show", "ja": "ドラッグクイーンショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "20:00 - 23:00 | Drag Show & DJ Party | Free Entry",
+            "ja": "20:00 - 23:00 | ドラッグショー＆DJパーティ | 無料入場"
+          },
+          "imageUrl": "posters/Drag Queen Party June.jpg",
+          "color": "#d8a3d1"
+        },
+        {
+          "date": "2024-06-30",
+          "title": { "en": "Art Magazine Release Party", "ja": "アートマガジン発売記念パーティー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "TBD",
+            "ja": "未定"
+          },
+          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "color": "#d0d8a3"
         }
       ],
       "07": [
