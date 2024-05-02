@@ -272,17 +272,6 @@
           },
           "imageUrl": "posters/Drag Queen Party May v2.jpg",
           "color": "#d8a3d1"
-        },
-        {
-          "date": "2024-05-01",
-          "title": { "en": "Match Making Party", "ja": "マッチメイキングパーティー" },
-          "place": { "en": "Nambar10", "ja": "ナンバー10" },
-          "description": {
-            "en": "TBD",
-            "ja": "未定"
-          },
-          "imageUrl": "posters/Cat coming soon 2.jpg",
-          "color": "#b8d8a3"
         }
       ],
       "06": [
@@ -296,6 +285,17 @@
           },
           "imageUrl": "posters/Dinner_Dance_blue.jpg",
           "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-03-15",
+          "title": { "en": "TELMONT Champagne Dinner", "ja": "テルモントのシャンパンディナー" },
+          "place": { "en": "Minami", "ja": "ミナミ" },
+          "description": {
+            "en": "18:30 - 21:00 | JPY23,000",
+            "ja": "18:30 - 21:00 | 23,000円"
+          },
+          "imageUrl": "posters/Minami Champagne Dinner.jpg",
+          "color": "#a3b2d8"
         },
         {
           "date": "2024-06-15",
@@ -320,7 +320,7 @@
           "color": "#a3bfd8"
         },
         {
-          "date": "2024-04-26",
+          "date": "2024-06-28",
           "title": { "en": "Violin Dinner at the Chapel", "ja": "チャペルでのバイオリンディナー" },
           "place": { "en": "Chapel Jour", "ja": "チャペルジュール" },
           "description": {
@@ -349,7 +349,7 @@
             "en": "TBD",
             "ja": "未定"
           },
-          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "imageUrl": "posters/Don Magazine Poster.jpg",
           "color": "#d0d8a3"
         }
       ],
@@ -388,6 +388,17 @@
           },
           "imageUrl": "posters/Dinner_Dance_blue.jpg",
           "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-08-01",
+          "title": { "en": "Match Making Party", "ja": "マッチメイキングパーティー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "TBD",
+            "ja": "未定"
+          },
+          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "color": "#b8d8a3"
         }
       ]
     }
