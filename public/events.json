@@ -366,6 +366,17 @@
           "color": "#d8c4a3"
         },
         {
+          "date": "2024-07-06",
+          "title": { "en": "Match Making Party", "ja": "マッチメイキングパーティー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "TBD",
+            "ja": "未定"
+          },
+          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "color": "#b8d8a3"
+        },
+        {
           "date": "2024-07-24",
           "title": { "en": "Salsa Night", "ja": "サルサナイト" },
           "place": { "en": "Table36", "ja": "テーブル36" },
@@ -388,17 +399,6 @@
           },
           "imageUrl": "posters/Dinner_Dance_blue.jpg",
           "color": "#d8c4a3"
-        },
-        {
-          "date": "2024-08-01",
-          "title": { "en": "Match Making Party", "ja": "マッチメイキングパーティー" },
-          "place": { "en": "Nambar10", "ja": "ナンバー10" },
-          "description": {
-            "en": "TBD",
-            "ja": "未定"
-          },
-          "imageUrl": "posters/Cat coming soon 2.jpg",
-          "color": "#b8d8a3"
         }
       ]
     }
