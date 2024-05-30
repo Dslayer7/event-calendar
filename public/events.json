@@ -327,7 +327,7 @@
             "en": "18:30 - 22:00 | Live Violin and Piano Performance while enjoying a 5 course meal | JPY24,000",
             "ja": "18:30 - 22:00 | 5 コース料理を楽しみながらヴァイオリンとピアノの生演奏を鑑賞 | 24,000円"
           },
-          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "imageUrl": "posters/Violin Dinner JUNE.jpg",
           "color": "#d5d8a3"
         },
         {
@@ -338,7 +338,7 @@
             "en": "20:00 - 23:00 | Drag Show & DJ Party | Free Entry",
             "ja": "20:00 - 23:00 | ドラッグショー＆DJパーティ | 無料入場"
           },
-          "imageUrl": "posters/Drag Queen Party June.jpg",
+          "imageUrl": "posters/Drag Queen Party June v2.jpg",
           "color": "#d8a3d1"
         },
         {
@@ -346,8 +346,8 @@
           "title": { "en": "Art Magazine Release Party", "ja": "アートマガジン発売記念パーティー" },
           "place": { "en": "Nambar10", "ja": "ナンバー10" },
           "description": {
-            "en": "TBD",
-            "ja": "未定"
+            "en": "Free entry and magazine commemorating the release of DON Magazine",
+            "ja": "DONマガジン創刊記念入場無料＆雑誌プレゼント"
           },
           "imageUrl": "posters/Don Magazine Poster.jpg",
           "color": "#d0d8a3"
@@ -367,14 +367,14 @@
         },
         {
           "date": "2024-07-06",
-          "title": { "en": "Match Making Party", "ja": "マッチメイキングパーティー" },
+          "title": { "en": "Koikatsu Event", "ja": "マッチメイキングパーティー" },
           "place": { "en": "Nambar10", "ja": "ナンバー10" },
           "description": {
-            "en": "TBD",
-            "ja": "未定"
+            "en": "19:00 - 23:00 | Mingle with others and explore new friendships and potential romances! | All you can eat and drink | JPY5,000",
+            "ja": "19:00 - 23:00 | 他の参加者と交流し、新しい友達やロマンスの可能性を探りましょう！ | 食べ放題、飲み放題 | 5,000円"
           },
-          "imageUrl": "posters/Cat coming soon 2.jpg",
-          "color": "#b8d8a3"
+          "imageUrl": "posters/Matching_Party.jpg",
+          "color": "#d8a3d1"
         },
         {
           "date": "2024-07-24",
