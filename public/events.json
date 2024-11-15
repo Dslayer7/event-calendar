@@ -386,6 +386,17 @@
           },
           "imageUrl": "posters/Salsa Event jul24.jpg",
           "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-07-29",
+          "title": { "en": "Drag Queen Show", "ja": "ドラッグクイーンショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "20:00 - 23:00 | Drag Show & DJ Party | Free Entry",
+            "ja": "20:00 - 23:00 | ドラッグショー＆DJパーティ | 無料入場"
+          },
+          "imageUrl": "posters/Drag Queen Party June.jpg",
+          "color": "#d8a3d1"
         }
       ],
       "08": [
@@ -399,6 +410,276 @@
           },
           "imageUrl": "posters/Dinner_Dance_blue.jpg",
           "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-08-28",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event Aug28.jpg",
+          "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-08-31",
+          "title": { "en": "Drag Queen Show", "ja": "ドラッグクイーンショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "20:00 - 23:00 | Drag Show & DJ Party | Free Entry",
+            "ja": "20:00 - 23:00 | ドラッグショー＆DJパーティ | 無料入場"
+          },
+          "imageUrl": "posters/DragQueenShow_Flyer_2408.jpg",
+          "color": "#d8a3d1"
+        }
+      ],
+      "09": [
+        {
+          "date": "2024-09-07",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-09-16",
+          "title": { "en": "Spotlight - TV Shooting", "ja": "サルサナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "Karaoke Session (11:00 - 13:00) | TV Shooting (13:00 - 17:00) | One free drink and food | JPY10,000",
+            "ja": "「カラオケセッション（11:00 - 13:00）| TV撮影（13:00 - 17:00）| ドリンク＆フード1杯無料| 10,000円」"
+          },
+          "imageUrl": "posters/SpotLight.jpg",
+          "color": "#d8d5a3"
+        },
+        {
+          "date": "2024-09-21",
+          "title": { "en": "Retro Night", "ja": "レトロナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 22:30 | 5 Live DJ playing beats fropm the 70s, 80s and 90s in a retro atmosphere with nostalgic drinks | Free Entry",
+            "ja": "18:00 - 22:30 | 5人のライブDJが、懐かしいドリンクとともにレトロな雰囲気の中で70年代、80年代、90年代のビートを演奏します | 入場無料"
+          },
+          "imageUrl": "posters/2409_RetroEventB.jpg",
+          "color": "#6994ad"
+        },
+        {
+          "date": "2024-09-25",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event Sep25.jpg",
+          "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-09-28",
+          "title": { "en": "Drag Queen Show", "ja": "ドラッグクイーンショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "20:00 - 23:00 | Drag Show & DJ Party | Free Entry",
+            "ja": "20:00 - 23:00 | ドラッグショー＆DJパーティ | 無料入場"
+          },
+          "imageUrl": "posters/DragQueenShow_Flyer_2409.jpg",
+          "color": "#d8a3d1"
+        }
+      ],
+      "10": [
+        {
+          "date": "2024-10-05",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-09-28",
+          "title": { "en": "Drag Queen Brunch", "ja": "ドラッグクイーンブランチ" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "10:30 - 13:30 | Buffet Brunch with Drag Queens and Show | JPY6,000",
+            "ja": "10:30 - 13:30 | ドラッグクイーンとショー付きビュッフェブランチ | 6,000 円"
+          },
+          "imageUrl": "posters/DragBrunch_Flyer.jpg",
+          "color": "#d8a3ca"
+        },
+        {
+          "date": "2024-10-12",
+          "title": { "en": "Retro Night", "ja": "レトロナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 22:30 | 5 Live DJ playing beats fropm the 70s, 80s and 90s in a retro atmosphere with nostalgic drinks | Free Entry",
+            "ja": "18:00 - 22:30 | 5人のライブDJが、懐かしいドリンクとともにレトロな雰囲気の中で70年代、80年代、90年代のビートを演奏します | 入場無料"
+          },
+          "imageUrl": "posters/2410_RetroEvent.jpg",
+          "color": "#6994ad"
+        },
+        {
+          "date": "2024-10-23",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event Aug28.jpg",
+          "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-10-24",
+          "title": { "en": "TELMONT Champagne Dinner", "ja": "テルモントのシャンパンディナー" },
+          "place": { "en": "Minami", "ja": "ミナミ" },
+          "description": {
+            "en": "18:30 - 21:00 | JPY23,000",
+            "ja": "18:30 - 21:00 | 23,000円"
+          },
+          "imageUrl": "posters/TelmontDinner_Oct24.jpg",
+          "color": "#d8c0a3"
+        },
+        {
+          "date": "2024-10-26",
+          "title": { "en": "Drag Queen Show", "ja": "ドラッグクイーンショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "20:00 - 23:00 | Drag Show & DJ Party | Free Entry",
+            "ja": "20:00 - 23:00 | ドラッグショー＆DJパーティ | 無料入場"
+          },
+          "imageUrl": "posters/DragQueenShow_Flyer_2410B.jpg",
+          "color": "#d8a3d1"
+        },
+        {
+          "date": "2024-10-27",
+          "title": { "en": "Halloween Costume Party", "ja": "ハロウィンコスチュームパーティー" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "15:00 - 18:30 | All you can drink and eat halloween themed buffet, costume contest, violin and magic show, and much more | JPY7,500",
+            "ja": "15:00 - 18:30 | ハロウィーンをテーマにしたビュッフェ、コスチュームコンテスト、バイオリンやマジックショーなど、食べ放題とドリンクが楽しめます | 7,500 円"
+          },
+          "imageUrl": "posters/Halloween 2024.jpg",
+          "color": "#a3d8d6"
+        },
+        {
+          "date": "2024-10-30",
+          "title": { "en": "Halloween Salsa Night", "ja": "ハロウィン サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/SalsaNightHalloween_Oct24.jpg",
+          "color": "#d8a3a3"
+        },
+        {
+          "date": "2024-10-31",
+          "title": { "en": "Pink Flamingo Halloween", "ja": "ピンクフラミンゴハロウィン" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 23:00 | Halloween themed party with games and costume contest, Free Drink | JPY1,500",
+            "ja": "18:00 - 23:00 | ゲームやコスチュームコンテストなどのハロウィンをテーマにしたパーティー、フリードリンク | 1,500円"
+          },
+          "imageUrl": "posters/Pink Flamingo_241031 (Halloween)_POSTER A4_FA_2.png",
+          "color": "#aaa3d8"
+        }
+      ],
+      "11": [
+        {
+          "date": "2024-11-02",
+          "title": { "en": "Kickmitt Contest Vol. 10", "ja": "キックミットコンテスト Vol.10" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "The Lounge: Kickmitt contest and show (17:00 - 20:00) | Nambar10: Afterparty (20:00 - 23:00) | Kickmitt show, Live Pro-wrestling match, unlimmited drinks and buffet at the afterparty | JPY4,000",
+            "ja": "ザ・ラウンジ：キックミットコンテスト＆ショー（17:00～20:00）｜ナンバー10：アフターパーティー（20:00～23:00）｜キックミットショー、プロレス観戦、アフターパーティーでの飲み放題＆ビュッフェ｜4,000円"
+          },
+          "imageUrl": "posters/KickBoxingB.jpg",
+          "color": "#d8a3a3"
+        },
+        {
+          "date": "2024-11-02",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-11-15",
+          "title": { "en": "Violin Dinner at the Chapel", "ja": "チャペルでのバイオリンディナー" },
+          "place": { "en": "Chapel Jour", "ja": "チャペルジュール" },
+          "description": {
+            "en": "18:30 - 22:00 | Live Violin and Piano Performance while enjoying a 5 course meal | JPY23,000",
+            "ja": "18:30 - 22:00 | 5 コース料理を楽しみながらヴァイオリンとピアノの生演奏を鑑賞 | 23,000円"
+          },
+          "imageUrl": "posters/ViolinDinner_2411.jpg",
+          "color": "#b9d8a3"
+        },
+        {
+          "date": "2024-11-16",
+          "title": { "en": "City Beats", "ja": "シティビーツ" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 22:30 | Enjoy and dance the night away with 4 Live DJ playing the best beats | Free Entry",
+            "ja": "18:00 - 22:30 | 4人のライブDJが最高のビートを奏で、夜通し楽しく踊りましょう。 | 入場無料"
+          },
+          "imageUrl": "posters/Cat no flyer.jpg",
+          "color": "#ad6981"
+        },
+        {
+          "date": "2024-11-17",
+          "title": { "en": "Spotlight - TV Shooting", "ja": "サルサナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "Karaoke Session (11:00 - 13:00) | TV Shooting (13:00 - 17:00) | One free drink and food | JPY10,000",
+            "ja": "「カラオケセッション（11:00 - 13:00）| TV撮影（13:00 - 17:00）| ドリンク＆フード1杯無料| 10,000円」"
+          },
+          "imageUrl": "posters/SpotLight.jpg",
+          "color": "#d8d5a3"
+        },
+        {
+          "date": "2024-11-23",
+          "title": { "en": "Retro Night", "ja": "レトロナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 22:30 | 5 Live DJ playing beats fropm the 70s, 80s and 90s in a retro atmosphere with nostalgic drinks | Free Entry",
+            "ja": "18:00 - 22:30 | 5人のライブDJが、懐かしいドリンクとともにレトロな雰囲気の中で70年代、80年代、90年代のビートを演奏します | 入場無料"
+          },
+          "imageUrl": "posters/2411_RetroEvent.jpg",
+          "color": "#6994ad"
+        },
+        {
+          "date": "2024-11-27",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event 2024.11.jpg",
+          "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-11-30",
+          "title": { "en": "Fashion Show", "ja": "ファッションショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "17:00 - 21:00 | Fashion Show | JPY4,000",
+            "ja": "17:00 - 21:00 | ファッションショー | 4,000円"
+          },
+          "imageUrl": "posters/Cat no flyer.jpg",
+          "color": "#aaa3d8"
         }
       ]
     }
