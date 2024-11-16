@@ -681,6 +681,164 @@
           "imageUrl": "posters/Cat no flyer.jpg",
           "color": "#aaa3d8"
         }
+      ],
+      "12": [
+        {
+          "date": "2024-11-07",
+          "title": { "en": "Retro Night", "ja": "レトロナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 22:30 | 5 Live DJ playing beats fropm the 70s, 80s and 90s in a retro atmosphere with nostalgic drinks | Free Entry",
+            "ja": "18:00 - 22:30 | 5人のライブDJが、懐かしいドリンクとともにレトロな雰囲気の中で70年代、80年代、90年代のビートを演奏します | 入場無料"
+          },
+          "imageUrl": "posters/2411_RetroEvent.jpg",
+          "color": "#6994ad"
+        },
+        {
+          "date": "2024-12-07",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-12-08",
+          "title": { "en": "Art Magazine Release Party", "ja": "アートマガジン発売記念パーティー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "15:00 - 22:00 | Check out the artistic community in Osaka; art, shows, live music, and a free Vol of DON Magazine | Free Entry",
+            "ja": "15:00 - 22:00 | 大阪の芸術コミュニティをチェックしましょう。アート、ショー、ライブミュージック、そして無料のDONマガジンの巻 | 入場無料"
+          },
+          "imageUrl": "posters/Don Magazine Poster.jpg",
+          "color": "#d0d8a3"
+        },
+        {
+          "date": "2024-12-14",
+          "title": { "en": "Language Exchange Christmas Party", "ja": "言語交換クリスマスパーティー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "19:00 - 23:00 | Meet new people and expand your Japanese and Spanish Language skills while enjoying some Latin shows and dancing | JPY3,000",
+            "ja": "19:00 - 23:00 | ラテンショーやダンスを楽しみながら、新しい人々と出会い、日本語とスペイン語のスキルを伸ばしましょう。 | 3,000円"
+          },
+          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "color": "#d8aea3"
+        },
+        {
+          "date": "2024-12-18",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event 2024.11.jpg",
+          "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-12-28",
+          "title": { "en": "Latin Dance Show", "ja": "ラテンダンスショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "19:00 - 23:00 | Enjoy Dance Shows and live Musicians, and end up dancing the night away | JPY2,500",
+            "ja": "19:00 - 23:00 | ダンスショーやライブミュージシャンを楽しみ、夜通し踊り明かしましょう | 2,500円"
+          },
+          "imageUrl": "posters/Cat coming soon 2.jpg",
+          "color": "#bdd8a3"
+        }
+      ],
+      "13": [
+        {
+          "date": "2024-11-02",
+          "title": { "en": "Kickmitt Contest Vol. 10", "ja": "キックミットコンテスト Vol.10" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "The Lounge: Kickmitt contest and show (17:00 - 20:00) | Nambar10: Afterparty (20:00 - 23:00) | Kickmitt show, Live Pro-wrestling match, unlimmited drinks and buffet at the afterparty | JPY4,000",
+            "ja": "ザ・ラウンジ：キックミットコンテスト＆ショー（17:00～20:00）｜ナンバー10：アフターパーティー（20:00～23:00）｜キックミットショー、プロレス観戦、アフターパーティーでの飲み放題＆ビュッフェ｜4,000円"
+          },
+          "imageUrl": "posters/KickBoxingB.jpg",
+          "color": "#d8a3a3"
+        },
+        {
+          "date": "2024-11-02",
+          "title": { "en": "Dinner Dance", "ja": "ディナーダンス" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "Every Saturday Night | 18:00 - 23:00 | The Brown Eyed Katz Band Exclusive Performance",
+            "ja": "毎週土曜日の夜 | 18:00 - 23:00 | ブラウン・アイド・カッツバンドの独占公演"
+          },
+          "imageUrl": "posters/Dinner_Dance_blue.jpg",
+          "color": "#d8c4a3"
+        },
+        {
+          "date": "2024-11-15",
+          "title": { "en": "Violin Dinner at the Chapel", "ja": "チャペルでのバイオリンディナー" },
+          "place": { "en": "Chapel Jour", "ja": "チャペルジュール" },
+          "description": {
+            "en": "18:30 - 22:00 | Live Violin and Piano Performance while enjoying a 5 course meal | JPY23,000",
+            "ja": "18:30 - 22:00 | 5 コース料理を楽しみながらヴァイオリンとピアノの生演奏を鑑賞 | 23,000円"
+          },
+          "imageUrl": "posters/ViolinDinner_2411.jpg",
+          "color": "#b9d8a3"
+        },
+        {
+          "date": "2024-11-16",
+          "title": { "en": "City Beats", "ja": "シティビーツ" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 22:30 | Enjoy and dance the night away with 4 Live DJ playing the best beats | Free Entry",
+            "ja": "18:00 - 22:30 | 4人のライブDJが最高のビートを奏で、夜通し楽しく踊りましょう。 | 入場無料"
+          },
+          "imageUrl": "posters/Cat no flyer.jpg",
+          "color": "#ad6981"
+        },
+        {
+          "date": "2024-11-17",
+          "title": { "en": "Spotlight - TV Shooting", "ja": "サルサナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "Karaoke Session (11:00 - 13:00) | TV Shooting (13:00 - 17:00) | One free drink and food | JPY10,000",
+            "ja": "「カラオケセッション（11:00 - 13:00）| TV撮影（13:00 - 17:00）| ドリンク＆フード1杯無料| 10,000円」"
+          },
+          "imageUrl": "posters/SpotLight.jpg",
+          "color": "#d8d5a3"
+        },
+        {
+          "date": "2024-11-23",
+          "title": { "en": "Retro Night", "ja": "レトロナイト" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "18:00 - 22:30 | 5 Live DJ playing beats fropm the 70s, 80s and 90s in a retro atmosphere with nostalgic drinks | Free Entry",
+            "ja": "18:00 - 22:30 | 5人のライブDJが、懐かしいドリンクとともにレトロな雰囲気の中で70年代、80年代、90年代のビートを演奏します | 入場無料"
+          },
+          "imageUrl": "posters/2411_RetroEvent.jpg",
+          "color": "#6994ad"
+        },
+        {
+          "date": "2024-11-27",
+          "title": { "en": "Salsa Night", "ja": "サルサナイト" },
+          "place": { "en": "Table36", "ja": "テーブル36" },
+          "description": {
+            "en": "The Lounge: Salsa Lesson (19:00 - 20:00) | Table36: Salsa Party (20:00 - 23:00) | 2 Drinks, Lesson and Party | JPY3,000",
+            "ja": "ザ・ラウンジ：サルサレッスン（19:00 - 20:00）| テーブル36：サルサパーティー（20:00 - 23:00）| ドリンク2杯、レッスンとパーティー込み | 3,000円"
+          },
+          "imageUrl": "posters/Salsa Event 2024.11.jpg",
+          "color": "#a3bfd8"
+        },
+        {
+          "date": "2024-11-30",
+          "title": { "en": "Fashion Show", "ja": "ファッションショー" },
+          "place": { "en": "Nambar10", "ja": "ナンバー10" },
+          "description": {
+            "en": "17:00 - 21:00 | Fashion Show | JPY4,000",
+            "ja": "17:00 - 21:00 | ファッションショー | 4,000円"
+          },
+          "imageUrl": "posters/Cat no flyer.jpg",
+          "color": "#aaa3d8"
+        }
       ]
     }
 }      
